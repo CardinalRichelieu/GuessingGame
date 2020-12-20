@@ -6,4 +6,4 @@ The game ends if they player goes bankrupt or decides to stop playing when
 prompted.
 
 # License
-
+GNU GENERAL PUBLIC LICENSE, Version 3
