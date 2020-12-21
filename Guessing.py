@@ -4,12 +4,13 @@ wallet = {1: 100}  # storing players initial bankroll
 
 
 def num():
-    """Return a random number"""
+    """Return a random number."""
     correct_num = random.randint(1, 3)
     return correct_num
 
 
 def guess():
+    """Evaluate the players guess."""
     print("I see you have ${}".format(wallet[1]))
     ante = eval(input("How many dollars would you like to bet(25/50): "))
 
@@ -54,6 +55,7 @@ def guess():
 
 
 def restart():
+    """Restart the game."""
     again = input("Would you like to play again(y/n)?: ")
     if again != "y" and again != "n":
         print("That is not a valid answer...")
@@ -68,6 +70,7 @@ def restart():
 
 
 def end_game():
+    """Print random message to signify the game has ended."""
     end = ["Thanks for playing!",
            "Come back real soon now, ya hear!",
            "Have a good day!"]
@@ -75,6 +78,7 @@ def end_game():
 
 
 def main():
+    """Run the main block of code."""
     hello = ["Welcome to the table...",
              "Good to see you!",
              "Let's play!"]
