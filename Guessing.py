@@ -4,6 +4,7 @@ wallet = {1: 100}  # storing players initial bankroll
 
 
 def num():
+    """Return a random number"""
     correct_num = random.randint(1, 3)
     return correct_num
 
